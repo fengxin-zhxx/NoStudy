@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/Sign.css"/>
+</head>
+<body>
+	<img src="img/JLU.jpeg" id="JLU"/>
+    <div class="box">
+		<div id="t1">注册</div>
+		<div id="t2">登录</div>
+		<span id="return"><ion-icon name="chevron-back"></ion-icon>&nbsp返回主页</span>
+		<div id="signin" style="margin-top: 25%">
+			<!-- <span id="href">没有账号？<a href="StudentSignin.html" style="text-decoration: underline;">去注册</a></span> -->
+			<div id="form">
+				<form action = "StudentSignin.php" method="post"> 
+					<!-- on submit method ? -->
+					<div>
+						<ion-icon name="caret-down-outline"></ion-icon>
+						<select name = "LoginMethod">
+							<option>选择登录方式</option>
+							<option>手机号登录</option>
+							<option>邮箱登录</option>
+						</select>
+					</div>
+					<div>
+						<ion-icon name="call"></ion-icon>
+						<input type="text" name = "LoginContact" id = "LoginContact" placeholder="手机号/邮箱" >
+					</div>	
+					<div>
+						<ion-icon name="lock-closed"></ion-icon>
+						<input type="password" name = "LoginPassword" id = "LoginPassword" placeholder="密码" >
+					</div>
+					<div><button class="submit" type="submit" style="margin-top:80px">登录</button></div>
+				</form>
+			</div>
+		</div>
+		<div id="signup" style="margin-top: 10%">
+				    <!-- <span id="href">没有账号？<a href="StudentSignin.html" style="text-decoration: underline;">去注册</a></span>  -->
+					<div id="form">
+						<form action = "StudentSignup.php" method = "post" onsubmit="return SignupChecker()">
+							<div>
+								<ion-icon name="caret-down-outline"></ion-icon>
+								<select id="RegisterMethod" name = "RegisterMethod">
+									<option>选择注册方式</option>
+									<option>手机号注册</option>
+									<option>邮箱注册</option>
+								</select>
+							</div>
+							<div>
+								<ion-icon name="school"></ion-icon>
+								<select id = "RegisterSchool" name = "RegisterSchool">
+									<option>请选择学校</option>
+									<option>吉林大学</option>
+									<option>北京大学</option>
+									<option>清华大学</option>
+									<option>其他大学</option>
+								</select>
+							</div>
+							<div>
+								<ion-icon name="person-circle"></ion-icon>
+								<input type="text" id = "StudentID" name = "StudentID" placeholder="学号" >
+							</div>	
+							<div>
+								<ion-icon name="person"></ion-icon>
+								<input type="text" id = "StudentName" name = "StudentName" placeholder="姓名" >
+							</div>	
+							<div>
+								<ion-icon name="call"></ion-icon>
+								<input type="text" id = "RegisterContact" name = "RegisterContact" placeholder="手机/邮箱" >
+							</div>	
+							<div>
+								<ion-icon name="lock-closed"></ion-icon>
+								<input type="password" id = "RegisterPassword" name = "RegisterPassword" placeholder="密码" >
+							</div>
+							<button class="submit" type="submit">注册</button>
+						</form>
+					</div>
+				</div>
+		<div class="message" style="bottom: 285px;margin-left: 13px">登录即表示同意平台《隐私政策》和《用户协议》</div>
+		<div class="message" style="bottom: 15px;margin-left: 55px">Copyright  2022 | design by XiXiFu</div>
+    </div>
+    <!--
+		<div class="signin">
+		<div>登录</div>
+        <button>提交</button>
+    </div>
+	-->
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="./js/Buttons.js"></script>
+<script type="text/javascript" src="./js/Signup.js"></script>

@@ -1,0 +1,58 @@
+
+body{
+	background: url(../img/JLU.jpg) no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	
+}
+.box{
+	text-align: center;
+	background-color: rgba(226, 248, 255, 0.7);
+	margin: 0 auto;
+	width: 360px;
+	height: 580px;
+	/*border: solid 2px #6592CF; */
+	padding: 50px 50px 10px 50px;
+	border-radius: 20px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -320px 0 0 -200px;
+}
+.box button{
+	margin-top: 45px;
+	background-image: linear-gradient(to right,#e6ffea,#efebff);
+	opacity: 65%;
+	border-radius: 24px;
+	text-align: center;
+	font-size: 24px;
+	width:70%;
+	height:75px;
+	font-family: console;
+}
+button:hover{
+	cursor: pointer;
+	background-image: linear-gradient(to right,#ffffff,#ffffff);
+	opacity: 90%;
+}
+input{
+	width: 80%;
+	height: 48px;
+	vertical-align: top;
+	border: 1px solid #E3E8F0;
+	font-size: 14px;
+	border-radius: 24px;
+	padding: 0 24px 0 20px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+#t2{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: #324164;
+	border-bottom: 4px solid #FFFFFF;
+	padding-bottom: 12px;
+	border-bottom-color: #000000;
+}

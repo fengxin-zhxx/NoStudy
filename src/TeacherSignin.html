@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<style>
+	body{
+		background-image: url(img/background.jpeg);
+	}
+	#t{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		font-size: 25px;
+		color: #5f9a9a;
+		border-bottom: 4px solid #FFFFFF;
+		padding-bottom: 12px;
+	}
+	#t:hover{
+		color:#1244ce;
+	}
+</style>
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/Sign.css"/>
+</head>
+<body>
+	<img src="img/JLU.jpeg" id="JLU"/>
+    <div class="box">
+		<div id="t">教师登录</div>
+		<span id="return"><ion-icon name="chevron-back"></ion-icon>&nbsp返回主页</span>
+		<div id="signup" >
+			<div id="form" style = "margin-top: 70px;">
+				<form action="TeacherSignin.php" method="post">
+					<div>
+						<ion-icon name="school"></ion-icon>
+						<select name="LoginMethod">
+							<option>选择学校</option>
+							<option>吉林大学</option>
+							<option>北京大学</option>
+							<option>清华大学</option>
+							<option>其他</option>
+						</select>
+					</div>
+					<div>
+						<ion-icon name="person-circle"></ion-icon>
+						<input name="LoginContact" type="text" placeholder="教学号" >
+					</div>	
+					<div>
+						<ion-icon name="lock-closed"></ion-icon>
+						<input name="LoginPassword" type="password" placeholder="密码" >
+					</div>
+					<div><button type = "submit" id="submit">登录</button></div>
+				</form>
+			</div>
+		</div>
+    </div>
+    <!--
+		<div class="signin">
+		<div>登录</div>
+        <button>提交</button>
+    </div>
+	-->
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+	var ret = document.getElementById("return");
+	ret.onclick=function(){
+		window.location.href = "Homepage.html";
+	}
+	
+</script>
