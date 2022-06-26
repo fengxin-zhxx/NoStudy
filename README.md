@@ -21,3 +21,4 @@
 3、运行SQL脚本  ***DB.sql***  
 4、打开  *php_study*  运行  *Apache*  服务器  
 5、打开浏览器,地址栏输入  **localhost/NoStudy**  
+# NoStudy
