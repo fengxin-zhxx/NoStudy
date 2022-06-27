@@ -21,4 +21,7 @@
 3、运行SQL脚本  ***DB.sql***  
 4、打开  *php_study*  运行  *Apache*  服务器  
 5、打开浏览器,地址栏输入  **localhost/NoStudy**  
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27e41bc07c8b7f4a0e2be9a6e4efdc70f3dad3c6
