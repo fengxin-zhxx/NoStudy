@@ -24,5 +24,9 @@
 
 ---  
 ### 使用技术  
-1、使用基础php+mysql在动态网页上显示和存储用户信息  
-2、前端页面使用layUI框架开发  
+1、	使用基础三大件HTML、CSS、JavaScript完成静态页面（如登录界面）  
+2、	使用MySQL数据库存储用户信息和签到、作业、讨论、文件、考试信息等  
+3、	使用服务器端语言PHP的MySQL API接口完成数据的增删改查  
+4、	使用AJAX技术，利用JavaScript创建XMLHttpRequest传递数据（包括JSON格式）、操作DOM执行动态效果的方式创建交互式网页  
+5、	使用开源框架Layui（开源的Web UI库）设计WorkSpace界面  
+ 
